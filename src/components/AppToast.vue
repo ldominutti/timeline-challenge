@@ -79,8 +79,9 @@ export default {
 <style scoped>
 .toast {
     position: fixed;
-    top: 20px;
-    width: 80%;
+    bottom: 20px;
+    right: 20px;
+    max-width: 450px;
     padding: 12px 24px;
     border-radius: 4px;
     color: white;

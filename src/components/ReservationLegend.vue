@@ -30,6 +30,7 @@
     display: flex;
     gap: 15px;
     align-items: center;
+    flex-wrap: wrap;
   }
   
   .legend-item {

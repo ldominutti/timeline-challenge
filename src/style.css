@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
 body,
 html,
 input {
@@ -99,4 +100,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   color: #e74c3c;
   margin-top: 1rem;
   font-size: 0.875rem;
+}
+
+@media (max-width: 600px) {
+  body,
+  html,
+  input {
+    padding: 5px;
+  }
 }

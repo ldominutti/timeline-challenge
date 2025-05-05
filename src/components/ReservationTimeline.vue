@@ -2,7 +2,7 @@
   <div class="timeline-container">
     <div class="timeline-header">
       <div class="timeline-title">Agenda de Reservas</div>
-      <ReservationLegend :items="legendItems"></ReservationLegend>
+      <ReservationLegend class="timeline-legend" :items="legendItems"></ReservationLegend>
     </div>
 
     <div class="timeline-wrapper">
@@ -192,5 +192,16 @@ export default {
   width: 1px;
   height: 1px;
   opacity: 0;
+}
+
+@media (max-width: 600px) {
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .timeline-legend {
+    margin: 10px 0px;
+  }
 }
 </style>

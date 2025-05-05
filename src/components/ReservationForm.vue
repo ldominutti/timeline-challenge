@@ -53,7 +53,7 @@ export default {
     todayDate: window.moment().format('YYYY-MM-DD')
   }),
   computed: {
-  dateTime() {
+    dateTime() {
       const { date, startTime, endTime } = this.formData;
       return {
         start: window.moment(`${date} ${startTime}`),
@@ -135,5 +135,59 @@ export default {
 .submit-button {
   flex: 1;
   min-width: 130px;
+}
+
+@media (max-width: 900px) {
+  .form-row {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .form-group.name-group {
+    flex: 1 1 100%;
+  }
+
+  .form-group.date-group {
+    flex: 2;
+    min-width: 180px;
+  }
+
+  .form-group.time-group {
+    flex: 1;
+    min-width: 120px;
+  }
+
+  .submit-button {
+    flex: 1 1 auto;
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    padding: 30px 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 15px;
+  }
+
+  .form-group {
+    width: 100%;
+    min-width: 100% !important;
+  }
+
+  .submit-button {
+    width: 100%;
+    margin-top: 10px;
+    min-width: auto;
+  }
+
+  input[type="date"],
+  input[type="time"] {
+    font-size: 16px;
+  }
 }
 </style>
