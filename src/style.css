@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+body,
+html,
+input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12pt;
+  padding: 15px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form styles */
+.form-container {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.075);
+  border-radius: 8px;
+  padding: 42px 36px;
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+
+.form-title {
+  color: #006755;
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  min-width: 80px;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  color: #838383;
+  margin-bottom: 6px;
+}
+
+.form-input {
+  height: 38px;
+  padding: 0 6px 0 12px;
+  color: #cdcdcd;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+  box-shadow: 0 .8px 3px rgba(0,0,0,0.1);
+}
+
+.form-input:focus {
+  border-color: #006755;
+  outline: none;
+}
+
+.form-button {
+  height: 38px;
+  padding: 0 8px;
+  background: #00a98f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  box-shadow: 0 2px 1px rgba(0,0,0,0.1);
+  font-size: .9rem;
+}
+
+/* Date/time picker icons */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.6);
+  opacity: 0.8;
+  font-size: 1.4rem;
+  padding: 0;
+}
+
+/* Error styles */
+.invalid-input {
+  border-color: #e74c3c !important;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+}
